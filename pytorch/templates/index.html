@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='chat.css') }}">
+    <title>PrepPal - An Interactive Chatbot</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="chat-icon">
+                <!-- <img src="image/icon.png" alt=""> -->
+                <p class="moving-text">Hello! I'm PrepPal, a chatbot developed by Group 3. I'm here to assist you with any questions or problems you might have. Just ask me anything and I'll do my best to provide you with an informative and helpful response, Thank you.</p>
+            </div>
+            <div class="left">
+                <div class="icon-box">
+                    <div class="icon icon1"><div class="plus-icon">+</div></div>
+                    <div class="icon icon2"><div class="plus-icon">+</div></div>
+                    <div class="icon icon3"><div class="plus-icon">+</div></div>
+                </div>
+                <div class="left-box">
+                    <div class="image-slide">
+                        <div class="image-container">
+                            <img src="{{ url_for('static', filename='image/Screenshot 1.png') }}" />
+                            <!-- <img src="image/Screenshot 1.png" alt=""> -->
+                        </div>
+                        <div class="image-container">
+                            <img src="{{ url_for('static', filename='image/Screenshot 2.png') }}" />
+                        </div>
+                        <div class="image-container">
+                            <img src="{{ url_for('static', filename='image/Screenshot 3.png') }}" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+                
+                <div class="right-box">
+                    <div class="right-intro">
+                        <img src="{{ url_for('static', filename='image/Support.png') }}" />
+                        <h1>Meet PrepPal !</h1>
+                        <div class="typing-container"> <span class="typing-first"> </span> <span class="typing-second"></span></div>
+                        <button class="btn"><p>Start Chat</p></button>
+                    </div>
+                    <div class="right-demo">
+                        <div class="demo-box">
+                            <div class="chat-top">
+                                <div class="back-icon"><img src="{{ url_for('static', filename='image/left arraw icon.png') }}" /></div>
+                                <div class="profile-icon"><img src="{{ url_for('static', filename='image/Support.png') }}" /></div>
+                                <div class="profile-name"><p>PrepPal</p></div>
+                                <div class="about-icon"><img src="{{ url_for('static', filename='image/about icon.png') }}" /></div>
+                            </div>
+                            <div class="chat-box">
+                                <div class="message-part"><div class="message1"><p>Hi there, i'm here for helping you ! </p></div>
+                                    <div class="message2"><p>Hello, How can you help me? </p></div>
+                                    <div class="message3"><p>You can ask your doubt's, and i'm trying to answering you </p></div>
+                                    <div class="message4"><p>Thank you very much, </p></div>
+
+                                </div>
+                                <div class="typing-part">
+                                    <div class="typing-box">
+                                        <div class="input-icon"><span>+</span></div>
+                                   
+                                        <div class="input-text"><p class="animate-text">Type a message...</p></div>
+                                    
+                                        <div class="send-icon"><img src="{{ url_for('static', filename='image/send icon.png') }}" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="sideimage">
+                    <!-- <img src="image/Side image.png" alt=""> -->
+                </div>
+            </div>
+        </div>
+<!-- ----------------Chat window part -->
+<div class="chatbot">
+    <div class="about-bot">
+        <div class="about-top">
+            <div class="bot-profile"><img src="{{ url_for('static', filename='image/Support.png') }}" /></div>
+            <div class="bot-name"><p>PrepPal</p></div>
+        </div>
+        <div class="about-bottom">
+            <ul class="menu-list">
+                <li class="menu-item menu-home"><img class="img-icon" src="{{ url_for('static', filename='image/home icon.png') }}" alt=""><a href="#" class="menu-link">HOME</a></li>
+                <li class="menu-item menu-chat"><img class="img-icon" src="{{ url_for('static', filename='image/chat icon.png') }}" alt=""><a href="#" class="menu-link">CHAT</a></li>
+                <li class="menu-item about-us"><img class="img-icon" src="{{ url_for('static', filename='image/info icon.png') }}" alt=""><a href="#" class="menu-link">ABOUT US</a></li>
+                <li class="menu-item contact-us">
+                    <img class="img-icon" src="{{ url_for('static', filename='image/message icon.png') }}" alt="">
+                    <a href="#" class="menu-link">CONNECT WITH US</a>
+                    <li class="menu-item-list menu-item-list-active"><p>For any query mail us at:</p><h6>dipdey5531@gmail.com</h6><h6>aniteshbarman857@gmail.com</h6><h6>sayanpal9609@gmail.com</h6></li>
+                </li>
+                <!-- <li class="menu-item"><img class="img-icon" src="image/support icon.png" alt=""><a href="#" class="menu-link">HELP</a><img class="down-icon" src="image/down icon.png" alt=""></li> -->
+                <!-- <li class="menu-item list-active"><img class="img-icon" src="{{ url_for('static', filename='image/setting icon.png') }}" alt=""><a href="#" class="menu-link">SETTING</a><img class="down-icon" src="{{ url_for('static', filename='image/down icon.png') }}"alt="">
+                    <li class="menu-item-list menu-item-list-active"><p>Settings will be available soon</p></li>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <div class="chat-window">
+        <div class="chatwindow-top">
+            <div class="chat-name"><p>Chat</p></div>
+            <div class="chat-cancel"><div class="cancel-icon"><p>&#10005</p></div></div>
+        </div>
+        <div class="chatwindow-down">
+            <div class="name-panel"><div class="bot-icon"><img src="{{ url_for('static', filename='image/Support.png') }}" alt=""></div><div class="bot-status"><span>PrepPal</span><p>Online</p></div></div>
+            <div class="chat-panel">
+                <div class="chatbox-messages">
+                    
+                </div>
+                <div class="chat-footer">
+                    <input type="text" class="" placeholder="Write a message...">
+                    <button class="send-button"><img src="{{ url_for('static', filename='image/send icon.png') }}" alt=""></button>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="chat-window about-window">
+        <div class="about-window-header">
+            <div class="about-project-image"><img src="{{ url_for('static', filename='image/Support.png') }}" alt=""></div>
+            <div class="about-project-text"><span>PrepPal</span><p>A project developed by Group 3</p>
+                <!-- <h>Guided by Mr. Bodhisattwa Bhattacharyya</h> -->
+            </div>
+            <div class="chat-cancel about-cancel"><div class="cancel-icon"><p>&#10005</p></div></div>
+        </div>
+        <div class="about-window-footer">
+            <!-- <div class="group-image-container">
+                <div class="group-member-page">
+                    <div class="group-member-bio"><h1>MEET OUR</h1><h3>Project Mentor</h3><p>Mr. Bodhisattwa Bhattacharyya</p></div>
+                    <div class="group-member-image"><img src="image/image.jpg" alt=""></div>
+                </div>
+                <div class="group-member-page">
+                    <div class="group-member-bio"><h1>MEET OUR</h1><h3>Group Member</h3><p>Suvam Kumar Singh </p></div>
+                    <div class="group-member-image"><img src="image/PIPPY.jpg" alt=""></div>
+                </div>
+                <div class="group-member-page">
+                    <div class="group-member-bio"><h1>MEET OUR</h1><h3>Group Member</h3><p>Anitesh Barman</p></div>
+                    <div class="group-member-image"><img src="image/Anitesh.png" alt=""></div>
+                </div>
+                <div class="group-member-page">
+                    <div class="group-member-bio"><h1>MEET OUR</h1><h3>Group Member</h3><p>Avijit Dey</p></div>
+                    <div class="group-member-image"><img src="image/Avijit.jpeg" alt=""></div>
+                </div>
+                <div class="group-member-page">
+                    <div class="group-member-bio"><h1>MEET OUR</h1><h3>Group Member</h3><p>Sayan Pal</p></div>
+                    <div class="group-member-image"><img src="image/1681566390268.png" alt=""></div>
+                </div>
+            </div> -->
+
+            <div class="group-mentor-container">
+                <div class="group-mentor-image"><img src="{{ url_for('static', filename='image/project mentor1.jpeg') }}" alt=""></div>
+                <div class="group-mentor-about"><h2>Project Guide</h2> <h3>Mr. Bodhisattwa Bhattacharyya</h3> <p>State Aided College Teacher of GCETTS,</p> <p>Department of IT</p> </div>
+
+            </div>
+
+
+            
+            <div class="group-image-container">
+                <ul class="group-member-page">
+                    <li class="group-member-image trasnform-text"><h3>GROUP MEMBERS</h3></li>
+                    <li class="group-member-image"><img src="{{ url_for('static', filename='image/Anitesh1.png') }}" alt=""></li>
+                    <li class="group-member-image"><img src="{{ url_for('static', filename='image/Avijit1.jpeg') }}" alt=""></li>
+                    <li class="group-member-image"><img src="{{ url_for('static', filename='image/Suvam1.jpeg') }}" alt=""></li>
+                    <li class="group-member-image"><img src="{{ url_for('static', filename='image/Sayan.jpg') }}" alt=""></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="chat-window contact-info">
+        <div class="chat-cancel contactus-cancel"><div class="cancel-icon"><p>&#10005</p></div></div>
+        <div class="contact-info-header">
+            <div class="contact-info-header-text"><h2>Love to hear from you,</h2> <h2>Get in touch</h2><span class="waving-hand">👋</span</div>
+        </div>
+        <div class="contact-info-body">
+            <div class="contact-info-body-row">
+                <div class="contact-info-member">
+                    <div class="contact-info-member-row1">
+                        <div class="contact-info-member-img"><img src="{{ url_for('static', filename='image/Anitesh1.png') }}" alt=""></div>
+                        <div class="contact-info-member-about">
+                            <div class="contact-info-member-name"><h4>@aniteshbarman</h4><img src="{{ url_for('static', filename='image/blue tick.png') }}" alt=""></div><p>Front-end Developer</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-member-row"><img src="{{ url_for('static', filename='image/mail icon1.png') }}" alt=""><p>aniteshbarman857@gmail.com</p></div>
+
+                    <a href="https://www.linkedin.com/in/anitesh7/"  target="_blank">
+                    <div class="contact-info-member-row">
+                        <img src="{{ url_for('static', filename='image/linkdin icon.png') }}" alt=""><p>anitesh7</p>
+                    </div></a>
+
+                    <a href="https://www.google.com/"  target="_blank">
+                        <div class="contact-info-member-row"><img src="{{ url_for('static', filename='image/twiteer icon.png') }}" alt=""><p>@Aniteshbarman</p></div>
+                    </a>
+                    
+                </div>
+                <div class="contact-info-member">
+                    <div class="contact-info-member-row1">
+                        <div class="contact-info-member-img"><img src="{{ url_for('static', filename='image/Avijit1.jpeg') }}" alt=""></div>
+                        <div class="contact-info-member-about">
+                            <div class="contact-info-member-name"><h4>@avijitdey</h4><img src="{{ url_for('static', filename='image/blue tick.png') }}" alt=""></div><p>Content Researcher</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-member-row"><img src="{{ url_for('static', filename='image/mail icon1.png') }}" alt=""><p>dipdey5531@gmail.com</p></div>
+                   
+                    
+
+                    <a href="http://www.linkedin.com/in/avijit-dey-992a85277/"  target="_blank">
+                        <div class="contact-info-member-row"><img src="{{ url_for('static', filename='image/linkdin icon.png') }}" alt=""><p>avijitdey958</p></div>
+                    </a>
+
+                    <a href="http://twitter.com/"  target="_blank">
+                        <div class="contact-info-member-row"><img src="{{ url_for('static', filename='image/twiteer icon.png') }}" alt=""><p>@Avijitdey</p></div>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-info-body-row">
+                <div class="contact-info-member">
+                    <div class="contact-info-member-row1">
+                        <div class="contact-info-member-img"><img src="{{ url_for('static', filename='image/Suvam1.jpeg') }}" alt=""></div>
+                        <div class="contact-info-member-about">
+                            <div class="contact-info-member-name"><h4>@suvamkumarsingh</h4><img src="{{ url_for('static', filename='image/blue tick.png') }}" alt=""></div><p>Database Manager</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-member-row"><img src="{{ url_for('static', filename='image/mail icon1.png') }}" alt=""><p>suvam.gcetts@gmail.com</p></div>
+
+                    <a href="http://"  target="_blank">
+                        <div class="contact-info-member-row"><img src="{{ url_for('static', filename='image/linkdin icon.png') }}" alt=""><p>suvamkumarsingh25</p></div>
+                    </a>
+
+                    <a href="http://"   target="_blank">
+                        <div class="contact-info-member-row"><img src="{{ url_for('static', filename='image/twiteer icon.png') }}" alt=""><p>@SuvamKumarSingh4</p></div>
+                    </a>
+                </div>
+
+
+                <div class="contact-info-member">
+                    <div class="contact-info-member-row1">
+                        <div class="contact-info-member-img"><img src="{{ url_for('static', filename='image/Sayan.jpg') }}" alt=""></div>
+                        <div class="contact-info-member-about">
+                            <div class="contact-info-member-name"><h4>@sayanpal</h4><img src="{{ url_for('static', filename='image/blue tick.png') }}" alt=""></div><p>Back-end Developer</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-member-row"><img src="{{ url_for('static', filename='image/mail icon1.png') }}" alt=""><p>sayanpal9609@gmail.com</p></div>
+
+                    <a href="http://"  target="_blank">
+                        <div class="contact-info-member-row"><img src="{{ url_for('static', filename='image/linkdin icon.png') }}" alt=""><p>sayanpal234</p></div>
+                    </a>
+
+                    <a href="http://twitter.com/"  target="_blank">
+                        <div class="contact-info-member-row"><img src="{{ url_for('static', filename='image/twiteer icon.png') }}" alt=""><p>@Sayanpal9609</p></div>
+                    </a>    
+                </div>
+            </div> 
+        </div>
+    </div>
+
+</div>
+
+        
+</div>
+
+<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
