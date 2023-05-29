@@ -1,48 +1,17 @@
 # ChatBot-PrepPal
 
+Let us interoduce our Chatbot - "PrepPal", It is an AI based Interactive Chatbot using Pytorch.
 
-1. Anaconda installation
-2. open anaconda prompt as adminstrator ---- type where conda
-result looks like:>> 
-C:\Users\anaconda3\Library\bin\conda.bat
-C:\Users\anaconda3\Scripts\conda.exe
-C:\Users\anaconda3\condabin\conda.bat
+## Features
 
-3. copy upto \ part and add to path in system environment varible
-
-4. open vs code: ctrl+shift+p >> open user setting
-{ "python.terminal.activateEnvironment": true,
-"terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
-"python.condaPath": "C:\\Users\\Your User Name\\Anaconda3\\Scripts\\conda.exe" } add these code
-5.close terminal and reopen it.
-
-conda activate base
-6. conda create -n Ptorch pytorch torchvision
-   conda activate ptorch
-
-7.To train the pytorch model -----> 
-write in terminal(to open new terminal ctrl+shift+`) to open existing terminal(ctrl+`)---> python train.py
-
-8.To chat in terminal-----> python chat.py (write "quit" to end chat)
-9.To launch with GUI----> python app.py (and ctrl+click to the url) to exit(ctrl+c) 
+- Interactive conversation with the chatbot
+- Uses the ChatGPT model for generating responses
+- It can generate almost all Computer Science related Interview question answers.
+- Easy-to-understand Python code structure
 
 
 
 
 
-C:\Users\HP\AppData\Roaming\Python\Python310\Scripts\
-
-
-C:/Users/HP/anaconda3/Scripts/activate --- (whenever open the terminal just paste this path)
-
-
-10.To train the tensorflow model------> python train_chatbot.py
-11.To chat in terminal-----> python chatapp.py (press ctrl+c to end chat)
-12.To launch with GUI----> python appCopy.py (and ctrl+click to the url) to exit(ctrl+c) 
-
-
-
-
-Select interpreter --- Python 3.10.9 ('base') 
 
 
