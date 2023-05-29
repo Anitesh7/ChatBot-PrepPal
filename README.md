@@ -1,6 +1,6 @@
 # ChatBot-PrepPal
 
-Let us interoduce our Chatbot - "PrepPal", It is an AI based Interactive Chatbot using Pytorch.
+Let us interoduce our Chatbot - "PrepPal", It is an AI based Interactive Chatbot using Python.
 
 ## Features
 
