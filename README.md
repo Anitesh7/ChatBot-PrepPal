@@ -4,10 +4,14 @@ PrepPal is an intelligent chatbot developed to assist students by providing inst
 
 ## Features
 
-- Interactive conversation with the chatbot
-- Uses the ChatGPT model for generating responses
-- It can generate almost all Computer Science related Interview question answers.
-- Easy-to-understand Python code structure
+- An AI-based student support chatbot for instant query resolution
+- Applied Natural Language Processing (NLP) and Machine Learning for intent understanding
+- Implemented preprocessing techniques: tokenization, stemming, Bag-of-Words
+- Built and trained an MLP (Multi-Layer Perceptron) neural network using PyTorch
+- Frontend: HTML, CSS, JavaScript
+- Backend: Python and Flask
+- Enabled intent prediction and response generation from a structured knowledge base
+- Provides 24/7 automated assistance, improving accessibility and user experience
 
 
 
